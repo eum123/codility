@@ -1,24 +1,7 @@
 package arrays;
 
-public class OddOccurrencesInArray {
-	public int solution(int[] A) {
-		// write your code in Java SE 8
-		int missingNumber = 0;
-		for (int i = 0; i < A.length; i++)
-			missingNumber ^= A[i];
-
-		return missingNumber;
-	}
-
-	public static void main(String[] args) {
-		int[] A = { 9, 3, 9, 3, 9, 7, 9 };
-		// int[] A = {9,3,9,3,9,7,9,7};
-
-		OddOccurrencesInArray a = new OddOccurrencesInArray();
-		System.out.println(a.solution(A));
-	}
-}
 /**
+ * <pre>
  * A non-empty zero-indexed array A consisting of N integers is given. The array
  * contains an odd number of elements, and each element of the array can be
  * paired with another element that has the same value, except for one element
@@ -48,5 +31,23 @@ public class OddOccurrencesInArray {
  * expected worst-case time complexity is O(N); expected worst-case space
  * complexity is O(1), beyond input storage (not counting the storage required
  * for input arguments). Elements of input arrays can be modified.
- * 
+ * </pre>
  */
+public class OddOccurrencesInArray {
+	public int solution(int[] A) {
+		// write your code in Java SE 8
+		int missingNumber = 0;
+		for (int i = 0; i < A.length; i++)
+			missingNumber ^= A[i];
+
+		return missingNumber;
+	}
+
+	public static void main(String[] args) {
+		int[] A = { 9, 3, 9, 3, 9, 7, 9 };
+		// int[] A = {9,3,9,3,9,7,9,7};
+
+		OddOccurrencesInArray a = new OddOccurrencesInArray();
+		System.out.println(a.solution(A));
+	}
+}
