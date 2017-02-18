@@ -53,7 +53,7 @@ public class TapeEquilibrium {
 		
 		int part1 = 0;
 		int part2 = sum(A);
-		for(int i = 0 ;i<A.length ;i++) {
+		for(int i = 0 ;i<A.length-1 ;i++) {
 			part1 += A[i];
 			part2 -= A[i];
 			
